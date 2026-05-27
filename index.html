@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê de unhas</title>
+  <meta name="description"
+    content="Designer de unhas premium especializada em atendimentos exclusivos e cursos de alto padrão para profissionais que buscam excelência." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="assets/avatar.jpg" alt="Avatar da designer de unhas" class="avatar" />
+    <div>
+      <h1>Adriele Santos</h1>
+      <h3>Ateliê de unhas</h3>
+    </div>
+    <p>Atendimentos exclusivos e formação profissional de alto padrão para mulheres que valorizam sofisticação, técnica
+      impecável e resultados duradouros.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5571996169309" class="btn">Agendar Experiência Exclusiva</a>
+      <a href="https://wa.me/5571996169309" class="btn">Cursos Presenciais</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Atendimentos Premium</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Alongamentos de Luxo</h3>
+        <p>Técnicas avançadas em fibra, gel e acrílico, com acabamento refinado, resistência superior e estética
+          personalizada.</p>
+      </div>
+      <div class="card">
+        <h3>Esmaltação Signature</h3>
+        <p>Cores exclusivas, aplicação precisa e brilho elegante para mulheres que não abrem mão da perfeição.</p>
+      </div>
+      <div class="card">
+        <h3>Manutenção Especializada</h3>
+        <p>Protocolos personalizados para preservar a saúde, beleza e durabilidade das suas unhas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <h2>Formação Profissional de Alto Nível</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Curso Profissional Completo</h3>
+        <p>Do zero à excelência, com técnicas atualizadas, visão de mercado premium e posicionamento profissional.</p>
+      </div>
+      <div class="card">
+        <h3>Aperfeiçoamento Avançado</h3>
+        <p>Para profissionais que desejam elevar o padrão técnico, atender um público exigente e aumentar o ticket
+          médio.</p>
+      </div>
+      <div class="card">
+        <h3>Mentoria Exclusiva</h3>
+        <p>Acompanhamento individual para acelerar resultados, fortalecer sua marca pessoal e alcançar autoridade no
+          mercado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao-sobre">
+    <h2>Sobre a Profissional</h2>
+    <div>
+      <article>
+        <p>Com sólida experiência no universo da beleza de alto padrão, atuo como designer de unhas especializada em
+          atendimentos exclusivos e formação de profissionais que buscam excelência técnica e posicionamento premium.
+        </p>
+        <!-- <img src="assets/468808964_933323648679767_1851771296609572784_n.jpg" alt="foto da profissional"> -->
+        <p>Meu trabalho une sofisticação, precisão e estratégia, entregando resultados que refletem confiança, elegância
+          e valor.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <div class="brand">
+      <h1>Adriele Santos</h1>
+      <h3>Ateliê de unhas</h3>
+    </div>
+    <div class="hero-actions">
+      <a href="https://wa.me/5571996169309" class="btn">Agendar Experiência Exclusiva</a>
+      <a href="https://wa.me/5571996169309" class="btn">Cursos Presenciais</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Adriele Santos · Delicadeza na ponta dos seus dedos.</p>
+    <a href="https://wa.me/5571996169309"><img
+        src="assets/Digital_Glyph_White.svg"
+        alt="Icon do WhatsApp"></a>
+    <a href="https://www.instagram.com/adrielesantos.nails/"><img
+        src="assets/Instagram_Glyph_White.svg"
+        alt="Icone do Instagram"></a>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Adiciona a classe e para de observar (dispara uma única vez)
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 1 }); // 100% do elemento visível
+
+    // Aplica a todos os elementos com a classe .reveal
+    document.querySelectorAll('.brand').forEach(el => observer.observe(el));
+
+  </script>
+
+</body>
+
+</html>
